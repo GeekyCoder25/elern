@@ -1,0 +1,376 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	min-height: 90vh;
+	background-color: #f9f8ff;
+}
+.header section {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-left: 5%;
+}
+.header button {
+	background-color: var(--purple);
+	border: 2px solid var(--purple);
+}
+.header h1 {
+	color: var(--darkpurple);
+	font-size: 3.5rem;
+}
+.header p {
+	color: gray;
+	line-height: 30px;
+	font-size: 1.3rem;
+}
+.header img {
+	padding: 20px;
+	background: linear-gradient(
+		to bottom right,
+		transparent 50%,
+		var(--green) 50% 75%,
+		var(--purple) 75% 100%
+	);
+	width: 700px;
+}
+.main {
+	margin-bottom: 100px;
+}
+.main .imgInst {
+	width: 100%;
+	margin: auto;
+	border: 2px solid grey;
+	border-width: 2px 0 2px 0;
+}
+.form {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	margin: auto;
+	margin-top: 50px;
+	width: 95%;
+}
+.form > .input {
+	flex: 3.5;
+	display: flex;
+	position: relative;
+	height: 70px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+.form input::placeholder {
+	font-size: 1.3rem;
+}
+.form input {
+	width: 100%;
+	height: 100%;
+	padding-left: 50px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+}
+.form button {
+	padding: 10px 30px;
+	position: absolute;
+	top: 15%;
+	right: 30px;
+}
+.form span {
+	position: relative;
+	width: 100%;
+}
+.form div span i {
+	position: absolute;
+	left: 22px;
+	top: 25px;
+	color: grey;
+}
+.form button i {
+	margin-right: 10px;
+}
+.form .select {
+	flex: 1;
+	border: none;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	position: relative;
+}
+.form select {
+	border: none;
+	height: 100%;
+	width: calc(100% - 70px);
+	margin-left: 50px;
+	border-radius: 10px;
+	outline: none;
+}
+.form .select i {
+	position: absolute;
+	top: 25px;
+	left: 22px;
+	color: rgba(0, 0, 0, 0.8);
+	border-radius: 10px;
+}
+.form option {
+	padding: 0;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 100px;
+}
+.card {
+	width: 400px;
+	padding: 30px 20px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+.card:hover {
+	background-color: var(--purple);
+	color: #fff;
+}
+.card div:first-child {
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.card div:first-child i {
+	color: var(--purple);
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+.card:hover div:first-child i {
+	color: #fff;
+}
+.card:hover div:first-child {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+.card h2 {
+	color: var(--darkpurple);
+}
+.card:hover h2 {
+	color: #fff;
+}
+.card p {
+	color: var(--green);
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin: 10px auto;
+}
+.card div:not(:first-child) i {
+	background-color: #efeeef;
+	border-radius: 50%;
+	padding: 5px;
+	margin-right: 5px;
+	color: var(--green);
+}
+.card span {
+	margin-right: 20px;
+}
+.card div:last-of-type {
+	margin-top: 10px;
+}
+.card button {
+	background-color: transparent;
+	color: #000;
+	margin-top: 20px;
+	transition: none;
+}
+.card:hover button {
+	color: #fff;
+	background-color: var(--green);
+}
+.cardLoadMoreContainer {
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+}
+.why {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	gap: 100px;
+}
+.why img {
+	padding: 20px;
+	border-radius: 20px;
+	background: linear-gradient(
+		to bottom left,
+		var(--green) 45%,
+		var(--purple) 45%
+	);
+	width: 500px;
+}
+.why h2 {
+	font-size: 3rem;
+	color: var(--darkpurple);
+}
+.why aside {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	gap: 50px;
+}
+.why p {
+	font-size: 1.3rem;
+	line-height: 30px;
+	color: grey;
+	max-width: 600px;
+}
+.why i {
+	color: var(--green);
+	font-size: 1.3rem;
+	margin-right: 10px;
+}
+.why aside div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	max-width: 300px;
+}
+.explore {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f9f8ff;
+	gap: 50px;
+	margin-top: 100px;
+	padding: 100px 0;
+}
+.explore section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+.explore > p {
+	font-size: 1.5rem;
+	color: grey;
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+}
+.explore section > div {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 400px;
+	padding-left: 20px;
+}
+.explore h2 {
+	text-transform: capitalize;
+	color: var(--darkpurple);
+}
+.explore section p {
+	color: grey;
+	margin-top: 5px;
+}
+.explore button {
+	background-color: var(--purple);
+	border-color: var(--purple);
+}
+.subscribe {
+	background: linear-gradient(
+		to bottom right,
+		var(--purple) 0% 10%,
+		var(--green) 10% 90%,
+		var(--purple) 90% 100%
+	);
+	height: 500px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	border-radius: 10px;
+}
+.subscribe h2 {
+	font-size: 2.5rem;
+	max-width: 600px;
+	text-align: center;
+}
+.subscribe p {
+	font-size: 1.2em;
+}
+.subscribe form {
+	display: flex;
+}
+.subscribe input {
+	border-radius: 20px 0 0 20px;
+	border: none;
+	padding: 0 30px;
+	outline: none;
+}
+.subscribe button {
+	background-color: var(--purple);
+	border-color: var(--purple);
+	border-radius: 0 20px 20px 0;
+}
+.footer {
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 0 30px;
+	gap: 50px;
+}
+.footer section {
+	width: 95%;
+	display: flex;
+	justify-content: space-around;
+}
+.footer section h2 {
+	margin-bottom: 30px;
+}
+.footer h2 {
+	color: var(--darkpurple);
+}
+.footer li {
+	list-style: none;
+	line-height: 40px;
+	font-size: 1.3rem;
+}
+.footer li a {
+	color: grey;
+}
+.footer small {
+	background-color: var(--purple);
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+.footer .logo {
+	color: #fff;
+}
+.footer i {
+	font-size: 15px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	border-radius: 50%;
+}
+.footerSub {
+	flex-direction: column;
+}
+.footerSub p {
+	margin-left: 5px;
+	display: inline-flex;
+	padding: 5px;
+}
+.footer .faBook {
+	margin-right: 8px;
+	background-color: transparent;
+	font-size: 1.5rem;
+}
