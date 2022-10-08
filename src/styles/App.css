@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,9 @@ html {
 	--purple: #6255a4;
 	--darkpurple: #40385d;
 	--green: #85d1a0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
 }
 .App {
 	max-width: 1400px;
