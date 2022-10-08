@@ -119,9 +119,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 50px;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	margin-top: 100px;
+	width: 95%;
+	margin: 50px auto 0;
 }
 .card {
 	width: 400px;
@@ -319,7 +321,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 80px 0 30px;
+	padding: 80px 0 0;
 	gap: 50px;
 }
 .footer section {
@@ -370,7 +372,133 @@
 	padding: 5px;
 }
 .footer .faBook {
-	margin-right: 8px;
 	background-color: transparent;
 	font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 12px;
+	}
+	.header {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.header section {
+		padding: 30px 5% 0;
+	}
+	.header img {
+		width: 100%;
+	}
+	.main .imgInst {
+		margin-top: 30px;
+	}
+	.form {
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.form > .input {
+		flex-direction: column;
+		box-shadow: unset;
+		border-radius: unset;
+		gap: 20px;
+		align-items: center;
+	}
+	.form button {
+		position: static;
+	}
+	.form input {
+		box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);
+		border-radius: 10px;
+		height: 50px;
+	}
+	.form select {
+		height: 50px;
+	}
+	.form div span i,
+	.form .select i {
+		top: 18px;
+	}
+	.cards {
+		width: 90%;
+		justify-content: center;
+	}
+	.cardLoadMoreContainer {
+		margin-top: 30px;
+	}
+	.why {
+		flex-direction: column;
+	}
+	.why aside {
+		width: 95%;
+		margin: auto;
+		text-align: center;
+		align-items: center;
+	}
+	.why aside p {
+		text-align: left;
+	}
+	.why aside div {
+		max-width: fit-content;
+	}
+	.why div:first-child {
+		display: flex;
+		justify-content: center;
+	}
+	.why img {
+		width: 90%;
+	}
+	.explore {
+		margin-top: 30px;
+		padding: 50px 5%;
+	}
+	.explore > p {
+		text-align: left;
+	}
+	.explore section > div {
+		width: 100%;
+	}
+	.subscribe {
+		width: 90%;
+		margin: auto;
+		height: fit-content;
+		padding: 50px 20px;
+		gap: 20px;
+	}
+	.subscribe h2 {
+		font-size: 1.5rem;
+	}
+	.subscribe form {
+		gap: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe input {
+		width: fit-content;
+		padding: 0 0 0 20px;
+		height: 50px;
+		border-radius: 20px;
+	}
+	.subscribe button {
+		border-radius: 20px;
+	}
+	.footer {
+		padding-top: 0;
+	}
+	.footer section {
+		flex-direction: column;
+		padding-left: 20px;
+	}
+	.footer div:not(:first-of-type) h2 {
+		margin-top: 25px;
+	}
+	.footer section h2 {
+		margin-bottom: 20px;
+	}
+	.footer small {
+		flex-direction: column;
+		gap: 10px;
+		justify-content: center;
+		padding: 20px;
+	}
 }

@@ -1,10 +1,14 @@
-.nav {
-	padding: 20px 50px;
+.nav,
+.overlay {
+	padding: 10px 20px;
 	display: flex;
 	align-items: center;
 }
 .logo {
 	font-size: 3.125rem;
+}
+.overlay {
+	display: none;
 }
 .nav ul {
 	display: flex;
@@ -27,4 +31,75 @@
 	color: #fff;
 	border: 2px solid var(--green);
 	transition: all 0.5s ease;
+}
+.nav i:last-child {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	.logo {
+		font-size: 2.125rem;
+	}
+	.nav ul {
+		display: none;
+	}
+	.nav i:last-child {
+		color: var(--purple);
+		font-size: 1.9rem;
+		margin-left: auto;
+		display: block;
+	}
+	.nav,
+	.overlay {
+		background-color: #fff;
+	}
+	.nav ul {
+		transform: translateY(-220px);
+		transition: transform 0.5s ease;
+		display: flex;
+		flex-direction: column;
+		background-color: var(--purple);
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 9;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+		padding: 20px 0 30px;
+	}
+	.nav a:last-child {
+		border-bottom: none;
+	}
+	.nav a {
+		color: #fff;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+	}
+	.nav .ulActive {
+		transform: translateY(200px);
+	}
+	.nav .fas,
+	.overlay .fas {
+		display: block;
+		font-size: 1.3rem;
+		margin-left: auto;
+	}
+	.nav .fas:last-child {
+		display: none;
+	}
+	.overlay {
+		position: fixed;
+		z-index: 99;
+		background-color: #fff;
+		right: 0;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+	.overlayActive {
+		display: flex;
+	}
+	.login {
+		margin-left: 0;
+	}
 }
