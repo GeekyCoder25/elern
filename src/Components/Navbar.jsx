@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
-import { useEffect } from 'react';
 import { useRef } from 'react';
 
 export const NavbarIcon = () => {
